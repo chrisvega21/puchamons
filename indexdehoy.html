@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokePage</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-green-500 p-5">
+    <main class="">
+        <form id="form" action="" class="p-2 flex justify-center">
+            <input id="input-pokemon" type="text" placeholder="Ingresar dato" class="rounded p-2" required>
+            <button class="bg-yellow-500 p-2">Buscar</button>
+        </form>
+    </main>
+    <br>
+    <section class="pt-2 flex justify-center">
+        <div class="bg-white rounded text-center">
+            <img id="pokemon-img" src="img/poke.jpg" alt="" width="600px" class="">
+            <h1 id="pokemon-name" class="font-semibold text-lg">¿Quién es ese Pokemón?</h1>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div id="listPower" class="pt-2 bg-white rounded p-4 text-center">
+            <ul>
+                <li>
+                    <br>
+                    ¿Cuales serán los poderes del Pokemon?
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="bg-blue-200 p-10 h-dvh">
+            <h2 class="text-center">Stats</h2>
+            <canvas id="stats">
+
+            </canvas>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
